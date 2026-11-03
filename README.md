@@ -19,6 +19,10 @@ A simple contact management application built with JavaScript, HTML, and CSS. It
 - Bootstrap 5
 - Local Storage API
 
+## Screenshot
+
+![Contact Management App](assets/crud-screenshot.png)
+
 ## Getting Started
 
 ### Run Locally
