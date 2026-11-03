@@ -43,9 +43,14 @@ No additional dependencies or backend configuration are required.
 
 ```text
 contact-management-app/
+│
+├── assets/
+│   └── crud-screenshot.png
+│
 ├── index.html
 ├── main.js
-└── styles.css
+├── styles.css
+└── README.md
 ```
 
 ## About
