@@ -1,3 +1,11 @@
+let form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    AddData();
+});
+
+
 //validar
 
 function ValidarFormulario() {
@@ -5,21 +13,26 @@ function ValidarFormulario() {
   let name = document.getElementById("inputName").value;
   let phone = document.getElementById("inputPhone").value;
 
-  if (email == "") {
+  let patronEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let patronPhone = /^(?=.*[0-9])[0-9 +\-]+$/
+  if (email.trim() === "") {
     alert("El campo correo es requerido");
     return false;
-  } else if (!email.includes("@")) {
+  } else if (!patronEmail.test(email)) {
     alert("El correo no es valido");
     return false;
   }
 
-  if (name == "") {
+  if (name.trim() === "") {
     alert("El campo nombre es requerido");
     return false;
   }
 
-  if (phone == "") {
+  if (phone.trim() === "") {
     alert("El campo telefono es requerido");
+    return false;
+  } else if(!patronPhone.test(phone)){
+    alert("El numero de telefono no es valido");
     return false;
   }
 

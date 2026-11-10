@@ -17,7 +17,7 @@
   <div class="container">
     <div class="container mb-5">
       <div class="row">
-        <form>
+        <form id="contactForm">
           <div class="mb-3">
             <label class="form-label">Correo electronico</label>
             <input type="email" class="form-control" id="inputEmail" placeholder="Correo Electronico">
@@ -28,10 +28,10 @@
           </div>
           <div class="mb-3">
             <label class="form-label">Telefono</label>
-            <input type="number" class="form-control" id="inputPhone" placeholder="Telefono">
+            <input type="tel" class="form-control" id="inputPhone" placeholder="Telefono">
           </div>
-          <button type="submit" class="btn btn-primary" id="btnAdd" onclick="AddData()">Enviar datos</button>
-          <button type="submit" class="btn btn-primary" id="btnUpdate">Actualizar datos</button>
+          <button type="submit" class="btn btn-primary" id="btnAdd">Enviar datos</button>
+          <button type="button" class="btn btn-primary" id="btnUpdate">Actualizar datos</button>
 
         </form>
       </div>
